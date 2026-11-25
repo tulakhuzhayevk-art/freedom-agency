@@ -4,7 +4,6 @@ import "./globals.css";
 import SmoothScroll from "@/components/fx/SmoothScroll";
 import Spotlight from "@/components/fx/Spotlight";
 import LangGate from "@/components/fx/LangGate";
-import { Analytics } from "@vercel/analytics/react";
 
 const unbounded = Unbounded({
   variable: "--font-display",
@@ -54,7 +53,6 @@ export default function RootLayout({
         <SmoothScroll>{children}</SmoothScroll>
         <Spotlight />
         <LangGate />
-        <Analytics />
       </body>
     </html>
   );
